@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SecBox 在线安全工具箱</title>
+<meta name="description" content="面向 CTF 竞赛与信息安全学习的在线工具集，涵盖编码解码、加密算法、哈希校验、隐写分析、压缩包处理、流量与 SQL、信息收集、二维码、区块链与杂项工具；全部计算在浏览器本地执行，数据不上传。">
+<meta property="og:title" content="SecBox 在线安全工具箱">
+<meta property="og:description" content="面向 CTF 竞赛与信息安全学习的在线工具集，全部计算在浏览器本地执行，数据不上传。">
+<link rel="icon" href="./assets/avatar.png">
+<script>
+  var needPolyfill = false;
+  try {
+    if (typeof crypto === "undefined" || typeof crypto.randomUUID !== "function"
+        || typeof Object.hasOwn !== "function" || typeof [].at !== "function"
+        || typeof [].findLast !== "function") { needPolyfill = true; }
+  } catch (e) { needPolyfill = true; }
+  if (needPolyfill) {
+    document.write('<script src="./assets/polyfills.js"><\/script>');
+  }
+  window.appId = "app_17haxey9q6p";
+  window.userId = "";
+  window.tenantId = "5473933346";
+  window.userName = "";
+  window.csrfToken = "";
+  window.ENVIRONMENT = "online";
+  window.__BASENAME__ = (function () {
+    var p = location.pathname;
+    return p.charAt(p.length - 1) === "/" ? p : p + "/";
+  })();
+  var appInfo = {
+    name: "SecBox 在线安全工具箱",
+    avatar: "./assets/avatar.png",
+    description: "面向 CTF 竞赛与信息安全学习的在线工具集，全部计算在浏览器本地执行，数据不上传。"
+  };
+  window._appInfo = appInfo;
+</script>
+<script type="module" crossorigin src="./assets/index-Dm1nKfmZ.js"></script>
+<link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-C0FnF6B9.js">
+<link rel="modulepreload" crossorigin href="./assets/radix-SGtrwMXj.js">
+<link rel="modulepreload" crossorigin href="./assets/toolkit-osEdCH-E.js">
+<link rel="stylesheet" crossorigin href="./assets/index-CFZgH_jl.css">
+</head>
+<body>
+<div id="root"></div>
+</body>
+</html>
